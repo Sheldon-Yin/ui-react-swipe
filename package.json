@@ -1,0 +1,49 @@
+{
+  "name": "ui-react-swipe",
+  "version": "0.0.56",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:lib": "babel src --out-dir lib",
+    "build:umd": "webpack src/Swipe.js dist/swipe.js --config webpack.config.development.js",
+    "build:umd:min": "webpack src/Swipe.js dist/swipe.min.js --config webpack.config.production.js",
+    "build": "npm run build:lib && npm run build:umd && npm run build:umd:min"
+  },
+  "tags": [
+    "react",
+    "swipe"
+  ],
+  "keywords": [
+    "react",
+    "swipe",
+    "swiper",
+    "ui"
+  ],
+  "description": "swipe for react",
+  "author": "JeromeLin <16908091@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JeromeLin/ui-react-swipe"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeromeLin/ui-react-swipe/issues"
+  },
+  "homepage": "https://github.com/JeromeLin/ui-react-swipe",
+  "dependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "classnames": "2.1.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "autoprefixer-loader": "^3.1.0",
+    "babel-loader": "^5.3.2",
+    "bundle-loader": "^0.5.0",
+    "css-loader": "^0.15.6",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^3.1.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
